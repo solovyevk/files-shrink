@@ -14,9 +14,11 @@ java -jar /home/pi/files-shrink/files-shrink.jar  */home/pi/mnt/usb1/ftp/files/c
 
 **Usage Example**
 
-    Unix cron job to remove obsolete files every day at midnight
+    Unix cron job to remove obsolete files every day at midnight and log output to files-shrink.log
 
-    0 * * * * /home/pi/files-shrink/run.sh  >> /home/pi/files-shrink/files-shrink 2>&1
+
+    0 * * * * /home/pi/files-shrink/run.sh  >> /home/pi/files-shrink/files-shrink.log 2>&1
+
 
 
 **Source at GitHub**
