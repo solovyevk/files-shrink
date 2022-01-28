@@ -57,7 +57,7 @@ public class OldFilesShrink {
       long rootSize = getRootFolderSize(allFiles, emptyDirectories);
       logInfo(String.format("Total number of files in \"%s\" directory is %d", rootDirectoryPath, allFiles.size()));
       logInfo(String.format("Total number of empty directories in \"%s\" directory is %d", rootDirectoryPath, emptyDirectories.size()));
-      logInfo(String.format("Size of directory \"%s\" is: %d GB", rootDirectoryPath, rootSize / MB_DENOMINATOR));
+      logInfo(String.format("Size of directory \"%s\" is: %d GB", rootDirectoryPath, rootSize / GB_DENOMINATOR));
       logInfo(String.format("Need to release %d MB from %d GB in directory \"%s\"", memoryToFree / MB_DENOMINATOR, rootSize / GB_DENOMINATOR,
                             rootDirectoryPath));
       allFiles.sort(Comparator.comparingLong(File::lastModified));
