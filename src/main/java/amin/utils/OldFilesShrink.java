@@ -84,7 +84,7 @@ public class OldFilesShrink {
     } else {
       logInfo(String.format("No files need to be deleted from  \"%s\" directory", rootDirectoryPath));
     }
-    if (emptyDirectories.size() > 0) {
+    if (!emptyDirectories.isEmpty()) {
       logInfo(String.format("Start removing empty directories from  \"%s\" directory", rootDirectoryPath));
       for (final File dir: emptyDirectories) {
         String directoryName = dir.getName();
